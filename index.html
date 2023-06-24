@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Quizzes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script o Libreria de animaciones Snow como Animate -->
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <!-- Script o Libreria de ventanas o alertas emergentes Sweet Alert 2 como Ventanas Emergentes o Alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Script Favicon o Icons para la pestaña de la pagina -->
+    <link rel="shortcut icon" href="./icons/quiz-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Div o Contenedor para la Animacion de Snow o Snow-Animate -->
+    <div id="snow-container">
+        <!-- Titulo general -->
+        <div class="quiz-title">
+            <h1>Gestor de Quizzes</h1>
+        </div>
+
+        <!-- Formulario para la creacion de Preguntas, Opciones y Respuestas -->
+        <form class="form-quiz" id="crear-quiz-form">
+            <h2>Crear un nuevo Quiz</h2>
+            <label for="nombre-quiz">Nombre del Quiz:</label>
+            <input type="text" id="nombre-quiz" placeholder="Nombre del Quiz" required>
+            <button class="crear-quiz" type="submit">Crear Quiz</button>
+        </form>
+
+        <!-- Contenedor de Quizzes -->
+        <div id="quizzes-container"></div>
+
+        <!-- Contenedor de Quizzes en Listas -->
+        <div class="quizzes-list-container">
+            <h3>Inspeccionar Quizzes Creados</h3>
+            <ul class="quizzes-list" id="quizzes-list"></ul>
+        </div>
+    </div>
+
+    <!-- Script Principal -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

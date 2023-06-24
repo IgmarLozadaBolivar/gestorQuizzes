@@ -1,0 +1,220 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+/* Ajustes generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo cuerpo en General */
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titulo */
+.quiz-title {
+    text-align: center;
+    color: #333;
+    background-color: ghostwhite;;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo etiqueta h1 */
+h1 {
+    margin: 1rem 0;
+}
+
+/* Estilo etiqueta h2 */
+h2 {
+    text-align: center;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+/* Estilo etiqueta h3 */
+h3 {
+    text-align: center;
+}
+
+/* Contenedor */
+.pregunta {
+    text-align: center;
+    color: #333;
+    background-color: ghostwhite;;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el Formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para los botones (Submit, Actualizar y Eliminar) */
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="actualizar"] {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00c3ffd0;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="actualizar"]:hover {
+    background-color: #00c3ff;
+}
+
+button[type="eliminar"] {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 55px;
+    padding: 10px 20px;
+    background-color: #ff0062c9;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="eliminar"]:hover {
+    background-color: #FF0060;
+}
+
+/* Estilos del ontenedor de Quizzes en Listas */
+.quizzes-list-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quizzes-list-container h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.quizzes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quizzes-list li {
+    margin-bottom: 1rem;
+}
+
+.seleccionar {
+    margin-left: 80px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quizzes-list li {
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quizzes-list li button:hover {
+    background-color: #222;
+}
+
+/* Estilo para la ventana o alerta emergente */
+.swal2-popup {
+    font-size: 1.1rem;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .quiz-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .form-quiz {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .quizzes-list-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .quizzes-list {
+        font-size: 14px;
+    }
+
+    .quiz {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pregunta {
+        font-size: 14px;
+    }
+}
